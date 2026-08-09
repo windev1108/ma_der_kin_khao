@@ -163,7 +163,7 @@ export const restaurant: RestaurantData = {
   social: {},
 
   hero: {
-    title: "Ma Der Kin Khao ມາເດີกินข้าว | Authentic Thai and Lao Restaurant in Singapore",
+    title: "Ma Der Kin Khao ມາເດີกินข้าว | Authentic Thai and Lao Restaurant",
     subtitle: "371 Beach Rd, B1-22 City Gate, Singapore 199597",
     image: "/images/hero-placeholder.jpg",
   },

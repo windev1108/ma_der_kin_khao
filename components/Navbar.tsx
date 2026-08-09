@@ -30,8 +30,8 @@ export function Navbar() {
     <header
       className={`fixed top-0 inset-x-0 z-40 transition-colors duration-300 ${
         scrolled
-          ? "bg-[var(--surface)]/95 backdrop-blur border-b border-[var(--border)]"
-          : "bg-transparent"
+          ? "bg-[var(--surface)]/95 backdrop-blur border-b border-[var(--border)] text-[var(--foreground)]"
+          : "bg-transparent text-white"
       }`}
     >
       <nav
@@ -40,7 +40,7 @@ export function Navbar() {
       >
         <Link
           href="/"
-          className="font-[family-name:var(--font-display)] text-lg tracking-wide"
+          className="font-[family-name:var(--font-display)] text-lg tracking-wide text-current"
         >
           {restaurant.brand.shortName}
         </Link>
@@ -48,9 +48,9 @@ export function Navbar() {
         <ul className="hidden md:flex items-center gap-8 text-sm">
           {NAV_LINKS.map((link) => (
             <li key={link.href}>
-              <a
+              
                 href={link.href}
-                className="relative text-[var(--foreground)] hover:text-[var(--accent)] transition-colors"
+                className="relative text-current hover:text-[var(--accent)] transition-colors"
               >
                 {link.label}
               </a>
@@ -60,9 +60,13 @@ export function Navbar() {
 
         <div className="hidden md:block">
           {reservationHref && (
-            <a
+            
               href={reservationHref}
-              className="inline-flex items-center px-5 py-2.5 text-xs tracking-wide uppercase bg-[var(--foreground)] text-[var(--surface)] hover:bg-[var(--accent)] transition-colors"
+              className={`inline-flex items-center px-5 py-2.5 text-xs tracking-wide uppercase transition-colors ${
+                scrolled
+                  ? "bg-[var(--foreground)] text-[var(--surface)] hover:bg-[var(--accent)]"
+                  : "bg-white text-[var(--foreground)] hover:bg-[var(--accent)] hover:text-white"
+              }`}
             >
               Reserve a Table
             </a>
