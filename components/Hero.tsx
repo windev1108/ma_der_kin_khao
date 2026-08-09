@@ -7,14 +7,14 @@ export function Hero() {
 
   return (
     <section className="relative h-[92svh] min-h-[560px] w-full flex items-end">
-      {/* <Image
+      <Image
         src={restaurant.hero.image}
         alt={restaurant.name}
         fill
         priority
         sizes="100vw"
         className="object-cover"
-      /> */}
+      />
       <div
         aria-hidden
         className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-black/10"
