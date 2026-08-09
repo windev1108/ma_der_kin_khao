@@ -139,13 +139,13 @@ export const restaurant: RestaurantData = {
 
   location: {
     address: "371 Beach Rd, B1-22 City Gate, Singapore 199597",
-    city: "[City]",
-    country: "[Country]",
+    city: "B1-22 City Gate",
+    country: "Singapore",
     // mapsUrl intentionally omitted — only add once a real, valid URL exists.
   },
 
   contact: {
-    phone: undefined,
+    phone: "+6593821795",
     email: undefined,
     website: undefined,
   },
@@ -163,8 +163,8 @@ export const restaurant: RestaurantData = {
   social: {},
 
   hero: {
-    title: "[Restaurant Name]",
-    subtitle: "[Short subtitle describing cuisine + location]",
+    title: "Ma Der Kin Khao ມາເດີกินข้าว | Authentic Thai and Lao Restaurant in Singapore",
+    subtitle: "371 Beach Rd, B1-22 City Gate, Singapore 199597",
     image: "/images/hero-placeholder.jpg",
   },
 
@@ -179,13 +179,23 @@ export const restaurant: RestaurantData = {
   menu: {
     categories: [
       {
-        name: "[Category — e.g. Starters]",
+        name: "SIGNATURES",
         items: [
           {
-            name: "[Dish name]",
-            description: "[Short factual description]",
-            price: "[Price]",
+            name: "Grilled Chicken",
+            description: "Marinated with hand pounded herbs overnight and grilled to perfection",
+            price: "18,00 SGD",
           },
+          {
+            name: "Laos Papaya Salad",
+            description: "Laos salad with green papaya, homemade fermented fish sauce, chilli padi.",
+            price: "7,00 SGD"
+          },
+          {
+            name: "Seafood Creamy Omelette",
+            description: "Prawns and squid in a creamy red curry omelette.",
+            price: "14,00 SGD"
+          }
         ],
       },
     ],
