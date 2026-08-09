@@ -47,8 +47,7 @@ export function Navbar() {
 
         <ul className="hidden md:flex items-center gap-8 text-sm">
           {NAV_LINKS.map((link) => (
-            <li key={link.href}>
-              
+            <li key={link.href}
                 href={link.href}
                 className="relative text-current hover:text-[var(--accent)] transition-colors"
               >
