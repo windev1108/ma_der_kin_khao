@@ -51,6 +51,7 @@ export function Navbar() {
                 href={link.href}
                 className="relative text-current hover:text-[var(--accent)] transition-colors"
               >
+                <a>
                 {link.label}
               </a>
             </li>
