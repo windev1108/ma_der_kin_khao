@@ -48,10 +48,13 @@ export function Navbar() {
         <ul className="hidden md:flex items-center gap-8 text-sm">
           {NAV_LINKS.map((link) => (
             <li key={link.href}
-                href={link.href}
+               
                 className="relative text-current hover:text-[var(--accent)] transition-colors"
               >
-                <a>
+                <a
+                href={link.href}
+                  className="relative text-current hover:text-[var(--accent)] transition-colors"
+                >
                 {link.label}
               </a>
             </li>
@@ -60,7 +63,7 @@ export function Navbar() {
 
         <div className="hidden md:block">
           {reservationHref && (
-            
+            <a
               href={reservationHref}
               className={`inline-flex items-center px-5 py-2.5 text-xs tracking-wide uppercase transition-colors ${
                 scrolled
